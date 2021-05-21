@@ -3,6 +3,7 @@ package com.htmlcomponent.application.service;
 import com.htmlcomponent.domain.model.htmlcomponent.HtmlComponent;
 import com.htmlcomponent.domain.model.htmlcomponent.HtmlComponentNotFoundException;
 import com.htmlcomponent.domain.model.htmlcomponent.HtmlComponentRepository;
+import com.htmlcomponent.domain.model.htmlcomponent.HtmlComponentValidationException;
 import com.htmlcomponent.domain.model.htmlcomponent.Page;
 import com.htmlcomponent.domain.model.vo.HtmlContent;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +21,10 @@ public class HtmlComponentService {
 
   @Transactional
   public HtmlComponent addHtmlComponent(String author) {
-    if (author.equals("")) return null;
+    if (author.equals("")) {
+      throw new HtmlComponentValidationException("Author not found.");
+    }
+
     HtmlComponent htmlComponent = HtmlComponent.builder().author(author).build();
     return htmlComponentRepository.save(htmlComponent);
   }
