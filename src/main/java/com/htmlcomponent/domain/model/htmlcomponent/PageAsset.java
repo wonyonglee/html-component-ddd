@@ -1,11 +1,8 @@
 package com.htmlcomponent.domain.model.htmlcomponent;
 
-import com.htmlcomponent.application.events.Events;
 import com.htmlcomponent.domain.model.TimeEntity;
-import com.htmlcomponent.domain.model.vo.HtmlContent;
 import java.io.Serializable;
 import javax.persistence.Column;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

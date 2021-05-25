@@ -1,4 +1,4 @@
-package com.htmlcomponent.application.events;
+package com.htmlcomponent.domain.event;
 
 import org.springframework.context.ApplicationEventPublisher;
 

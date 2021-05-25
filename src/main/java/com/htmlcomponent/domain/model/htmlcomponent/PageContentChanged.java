@@ -1,6 +1,6 @@
 package com.htmlcomponent.domain.model.htmlcomponent;
 
-import com.htmlcomponent.application.events.DomainEvent;
+import com.htmlcomponent.domain.event.DomainEvent;
 import com.htmlcomponent.domain.model.vo.HtmlContent;
 import lombok.Value;
 

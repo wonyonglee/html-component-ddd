@@ -1,4 +1,4 @@
-package com.htmlcomponent.application.events;
+package com.htmlcomponent.domain.event;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
